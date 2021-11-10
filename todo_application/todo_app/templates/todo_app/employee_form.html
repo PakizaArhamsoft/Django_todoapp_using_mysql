@@ -1,0 +1,18 @@
+{% extends 'todo_app/base.html' %}
+{% block content %}
+
+<div class="header-bar" style="background :#33ECFF ;">
+    <a href="{% url 'employees' %}">&#8592; Back</a>
+</div>
+
+
+<div class="card-body" style="border: 1px solid #33ECFF;">
+    <form method="POST" action="">
+        {% csrf_token %}
+        {{form.as_p}}
+        <input class="button" type="submit" value="Submit" style="color: #33ECFF;">
+    </form>
+</div>
+
+
+{% endblock content %}

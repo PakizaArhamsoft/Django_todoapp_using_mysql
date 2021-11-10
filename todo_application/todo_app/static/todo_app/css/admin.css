@@ -1,0 +1,166 @@
+.btn   {
+    width: 100%;
+    height: 50px;
+    border:none;
+    box-shadow: none;
+}
+.side_nav{
+    border-radius: 0px;
+    border:none;
+    text-align: left;
+}
+.tab_content{
+    display:none;
+}
+.contact_form
+{
+    width: 90%;
+    margin-left: 10%;;
+}
+#contact_edit{
+    width: 80%;
+    padding:10%;
+}
+#contact_edit tr{
+    height: 3vw;
+    line-height: 1.5vw;
+    width:100%;
+}
+#contact_edit tr th{
+    color:grey;
+    width: 15%;
+    font-size: 1vw;
+    padding: 0 1%;
+}
+#contact_edit td input{
+    width: 70%;
+    border-radius: 3px;
+    font-size: 0.9vw;
+    padding-left: 1%;
+    border: 1px solid #aaa;
+}
+#contact_edit input:hover,#contact_edit input:active{
+	border:1px solid #4286f4;
+}
+textarea:hover,textar:active{
+	border:1px solid #4286f4;
+}
+
+
+/* buttons*/
+
+.edit-box{
+    width:70%;
+    font-size: 1vw;
+}
+.catagory-select{
+    width: 70%;
+    height: 1.75vw;
+    font-size: 1vw;
+    border-radius: 3px;
+    color: grey;
+}
+.catagory-select:hover{
+    border: 1px solid #4286f4;
+}
+.catagory-select option{
+    font-size: 1vw;
+}
+
+.btn-edit{
+    width:70%;
+    height:2.5vw;
+    font-size: 1vw;
+    background-color:#ff3b38;
+    color: white;
+    border: 1px solid #ff3b38;
+    border-radius: 5px;
+    float: right;
+}
+.btn-edit:hover{
+    opacity: 0.8;
+}
+.btn-save{
+    height: 2.5vw;
+    width:100%;
+    font-size: 1.25vw;
+    background-color:limegreen;
+    color: white;
+    border: 1px solid limegreen;
+    border-radius: 3px;
+    float: right;
+}
+.btn-update,.btn-cancle,.btn-post{
+    width: 15%;
+    height: 3vw;
+    margin: 2vw 5% 0 0;
+    float: right;
+    color: white;
+}
+.edit-btn{
+    width: 15%;
+}
+.btn-update{
+    background-color: limegreen;
+    border: 1px solid limegreen;
+}
+.btn-cancle{
+    background-color: #ff3b38;
+    border: 1px solid #ff3b38;
+}
+.btn-post{
+    background-color: limegreen;
+    border: 1px solid limegreen;
+}
+.btn-update:hover,.btn-save:hover,.btn-cancle:hover,.btn-post:hover{
+    opacity: 0.7;
+}
+
+
+/* buttons end*/
+
+#sec_4{
+    height:26vw;
+	width:50%;
+    float:left;
+	margin:2.5% 0;
+    padding-left:10%; 
+}
+.ro2{
+	width:90%;
+}
+.col_5 h{
+    font-size: 1.2vw;
+}
+.col_5 ul{
+	list-style-type:none;
+	padding:0;
+}
+.col_5 ul li{
+	width:90%;
+	font-size:1vw;
+	padding:1% 0;
+    text-transform: capitalize;
+	margin:3% 5%;
+}
+.radio-button{
+    float: left;
+    font-size: 1vw;
+}
+.radio-button input[type=radio]{
+    float: left;
+    margin: 0px;
+}
+.radio-button lable{
+    font-size: 1vw;
+}
+#myInputDate,#work_state,#sleep_state,#exercise_state,#age_state,#breakfast_state,#vegetables_state,#smoke_state {
+  background-image: url(../images/search.png);
+  background-position: 10px 12px;
+  background-repeat: no-repeat;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+

@@ -1,0 +1,21 @@
+{% extends 'todo_app/base.html' %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+
+<div class="header-bar" style="background :#33ECFF ;">
+    <h1>Register</h1>
+</div>
+
+<div class="card-body" style="border: 1px solid #33ECFF;">
+    <form method="POST">
+        {% csrf_token %}
+        {{ form|crispy }}
+        <input class="button" type="submit" value="Register" style="color: #33ECFF;">
+    </form>
+    <p>Already have an account? <a href="{% url 'login' %}">Login</a></p>
+</div>
+
+
+
+{% endblock content %}

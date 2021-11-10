@@ -1,0 +1,18 @@
+{% extends 'todo_app/base.html' %}
+{% block content %}
+
+<div class="header-bar">
+    <a href="{% url 'employees' %}">&#8592; Go Back</a>
+</div>
+
+<div class="card-body">
+    <form method="POST">
+        {% csrf_token %}
+        <p>Are your sure you want to delete this employee data? <b>"{{employee}}"</b> </p>
+        <input class="button" type="submit" value="Delete" style="color: #33ECFF;" >
+    </form>
+</div>
+
+
+
+{% endblock content %}

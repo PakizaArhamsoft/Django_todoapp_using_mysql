@@ -1,0 +1,31 @@
+{% extends 'todo_app/base.html' %}
+{% load crispy_forms_tags %}
+{% load static %}
+{% block content %}
+<html>
+<head>
+    <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Login</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
+
+</head>
+<div class="header-bar" style="background :#33ECFF ;">
+    <h1>Login</h1>
+</div>
+
+<div class="card-body" style="border: 1px solid #33ECFF;">
+    <form method="POST">
+        {% csrf_token %}
+        {{form.as_p}}
+        <input class="button" type="submit" value="Login" style="color:#33ECFF;">
+    </form>
+    <p>Don't have an account? <a href="{% url 'register' %}">Register</a></p>
+</div>
+
+
+
+
+{% endblock content %}
+</html>
