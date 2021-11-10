@@ -61,3 +61,7 @@ For this we have been using django generic class-based-views.
 3. The class <b>EmployeeCreate</b> takes <b>CreateView</b> inherits directly from 1 view and 1 mixin, that create/add view of an employee.
 4. The class <b>EmployeeUpdate</b> takes <b>UpdateView</b> inherits directly from 1 view and 1 mixin. This view by default follows the same template_naming convention and form principles as the create view and Update the employee infro.
 5. The class <b>DeleteView</b> takes <b>DeleteView</b> inherits directly from 1 view and 1 mixin, that delete the view of an employee.
+
+## Create Models in models.py
+1. Create <b>Position</b> model, insert title field that store all Employee postions in company. Add this field as a foreign key into <b>Employee</b> table.
+2. Create <b>Employee</b> model, insert required Employee Info fields. Add User & Position model keys as forign keys.  
